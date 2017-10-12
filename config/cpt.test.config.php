@@ -1,6 +1,6 @@
 <?php
 
-$preamp['config']['custom_post_type']['test'] = array(
+$preamp_config['custom_post_type']['test'] = array(
 	'active' => true,
 	'labels' => array(
 		'name'               => _x( 'Test CPT', 'post type general name', 'copernicus-prime' ),
@@ -16,7 +16,7 @@ $preamp['config']['custom_post_type']['test'] = array(
 		'search_items'       => __( 'Search Test CPT', 'copernicus-prime' ),
 		'parent_item_colon'  => __( 'Parent Test CPT:', 'copernicus-prime' ),
 		'not_found'          => __( 'No Test CPT found.', 'copernicus-prime' ),
-		'not_found_in_trash' => __( 'No Test CPT found in Trash.', 'copernicus-prime' )
+		'not_found_in_trash' => __( 'No Test CPT found in Trash.', 'copernicus-prime' ),
 	),
 	'description' => __( 'Description.', 'copernicus-prime' ),
 	'public' => true,
@@ -42,25 +42,25 @@ $preamp['config']['custom_post_type']['test'] = array(
 	'delete_with_user' => true,
 );
 
-$preamp['config']['meta_box']['test'] = [
+$preamp_config['meta_box']['test'] = array(
 	'active' => true,
 	'type' => 'post',
-	'name' => __( 'My First Meta Box', 'copernicus-prime' ),
 	'post_type' => 'test',
+	'name' => __( 'My First Meta Box', 'copernicus-prime' ),
 	'context' => 'normal', // normal | advanced | side
 	'priority' => 'high', // high | core | default | low
 	'fields' => array(
 		'text_field' => array(
 			'type' => 'text',
-			'label' => __( 'Text field', 'copernicus-prime' )
+			'label' => __( 'Text field', 'copernicus-prime' ),
 		),
 		'email_field' => array(
 			'type' => 'email',
-			'label' => __( 'Email field', 'copernicus-prime' )
+			'label' => __( 'Email field', 'copernicus-prime' ),
 		),
 		'textarea_field' => array(
 			'type' => 'textarea',
-			'label' => __( 'Textarea field', 'copernicus-prime' )
+			'label' => __( 'Textarea field', 'copernicus-prime' ),
 		),
 		'select_field' => array(
 			'type' => 'select',
@@ -71,19 +71,8 @@ $preamp['config']['meta_box']['test'] = [
 			'options' => array(
 				-1 => '',
 				1 => 'no',
-				2 => 'yes'
-			)
-		)
-	)
-];
-
-$config['mb']['test2'] = [
-	'active' => true,
-	'type' => 'user',
-	'name' => 'my second meta box'
-];
-$config['mb']['test3'] = [
-	'active' => true,
-	'type' => 'term',
-	'name' => 'my third meta box'
-];
+				2 => 'yes',
+			),
+		),
+	),
+);
