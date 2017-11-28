@@ -1,3 +1,3 @@
 <?php
 
-$preamp_config['cleanup'] = 1;
+$config['cleanup'] = 1;

@@ -1,6 +1,6 @@
 <?php
 
-$preamp_config['custom_post_type']['slider'] = array(
+$config['custom_post_type']['slider'] = array(
 	'active' => true,
 	'labels' => array(
 		'name'               => _x( 'Slider', 'post type general name', 'copernicus-prime' ),
@@ -15,7 +15,7 @@ $preamp_config['custom_post_type']['slider'] = array(
 		'all_items'          => __( 'All Slides', 'copernicus-prime' ),
 		'search_items'       => __( 'Search Slide', 'copernicus-prime' ),
 		'parent_item_colon'  => __( 'Parent Slide:', 'copernicus-prime' ),
-		'not_found'          => __( 'No Slide found.', 'copernicus-prime' ),
+		'not_found'          => __( 'No Slides found.', 'copernicus-prime' ),
 		'not_found_in_trash' => __( 'No Slides found in Trash.', 'copernicus-prime' ),
 	),
 	'description' => __( 'Description.', 'copernicus-prime' ),

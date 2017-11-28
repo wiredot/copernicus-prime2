@@ -1,6 +1,6 @@
 <?php
 
-$preamp_config['custom_post_type']['test'] = array(
+$config['custom_post_type']['test'] = array(
 	'active' => true,
 	'labels' => array(
 		'name'               => _x( 'Test CPT', 'post type general name', 'copernicus-prime' ),
@@ -42,7 +42,7 @@ $preamp_config['custom_post_type']['test'] = array(
 	'delete_with_user' => true,
 );
 
-$preamp_config['meta_box']['test'] = array(
+$config['meta_box']['test'] = array(
 	'active' => true,
 	'type' => 'post',
 	'post_type' => 'test',
@@ -53,6 +53,10 @@ $preamp_config['meta_box']['test'] = array(
 		'text_field' => array(
 			'type' => 'text',
 			'label' => __( 'Text field', 'copernicus-prime' ),
+		),
+		'date_field' => array(
+			'type' => 'date',
+			'label' => __( 'Date field', 'copernicus-prime' ),
 		),
 		'email_field' => array(
 			'type' => 'email',
@@ -72,6 +76,70 @@ $preamp_config['meta_box']['test'] = array(
 				-1 => '',
 				1 => 'no',
 				2 => 'yes',
+			),
+		),
+		'select_multiple' => array(
+			'type' => 'select',
+			'label' => __( 'Select (multiple)', 'copernicus-prime' ),
+			'attributes' => array(
+				'multiple' => true,
+			),
+			'options' => array(
+				-1 => '',
+				1 => 'no',
+				2 => 'yes',
+			),
+		),
+		'checkbox' => array(
+			'type' => 'checkbox',
+			'label' => __( 'Checkbox', 'copernicus-prime' ),
+		),
+		'checkboxes' => array(
+			'type' => 'checkbox',
+			'label' => __( 'Checkboxes', 'copernicus-prime' ),
+			'options' => array(
+				1 => 'one',
+				2 => 'two',
+				3 => 'three',
+			),
+		),
+		'radios' => array(
+			'type' => 'radio',
+			'label' => __( 'Radios', 'copernicus-prime' ),
+			'options' => array(
+				1 => 'one',
+				2 => 'two',
+				3 => 'three',
+			),
+		),
+		'post' => array(
+			'type' => 'post',
+			'label' => __( 'Posts', 'copernicus-prime' ),
+			'arguments' => array(
+				'post_type' => 'test',
+			),
+		),
+		'users' => array(
+			'type' => 'user',
+			'label' => __( 'Users', 'copernicus-prime' ),
+			'arguments' => array(),
+		),
+		'user_roles' => array(
+			'type' => 'user_role',
+			'label' => __( 'User Role', 'copernicus-prime' ),
+			'arguments' => array(),
+		),
+		'photos' => array(
+			'type' => 'upload',
+			'label' => __( 'Photos', 'copernicus-prime' ),
+			'labels' => array(
+				'button' => __( 'Add Photos', 'copernicus-prime' ),
+				'button_window' => __( 'Add Photos', 'copernicus-prime' ),
+				'title' => __( 'Upload or Choose Photos', 'copernicus-prime' ),
+			),
+			'attributes' => array(
+				'multiple' => true,
+				'filetype' => 'image',
 			),
 		),
 	),

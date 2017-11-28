@@ -1,5 +1,5 @@
 <?php
 
-$preamp_config['language']['pl'] = array(
+$config['language']['pl'] = array(
 	'name' => 'Polskiww',
 );

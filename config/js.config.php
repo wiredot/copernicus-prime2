@@ -1,3 +1,3 @@
 <?php
 
-$preamp_config['css']['styles'] = array();
+$config['css']['styles'] = array();
