@@ -1,41 +1,8 @@
 <?php
 
-$config['taxonomy']['testb'] = array(
+$config['meta_box']['user']['test'] = array(
 	'active' => true,
-	'post_type' => 'test',
-	'args' => array(
-		'labels' => array(
-			'name'               => _x( 'Testb CPT', 'post type general name', 'copernicus-prime' ),
-			'singular_name'      => _x( 'Testb CPT', 'post type singular name', 'copernicus-prime' ),
-			'menu_name'          => _x( 'Testb CPT', 'admin menu', 'copernicus-prime' ),
-			'name_admin_bar'     => _x( 'Testb CPT', 'add new on admin bar', 'copernicus-prime' ),
-			'add_new'            => _x( 'Add New Testb CPT', 'add new', 'copernicus-prime' ),
-			'add_new_item'       => __( 'Add New Testb CPT', 'copernicus-prime' ),
-			'new_item'           => __( 'New Testb CPT', 'copernicus-prime' ),
-			'edit_item'          => __( 'Edit Testb CPT', 'copernicus-prime' ),
-			'view_item'          => __( 'View Testb CPT', 'copernicus-prime' ),
-			'all_items'          => __( 'All Testb CPT', 'copernicus-prime' ),
-			'search_items'       => __( 'Search Testb CPT', 'copernicus-prime' ),
-			'parent_item_colon'  => __( 'Parent Testb CPT:', 'copernicus-prime' ),
-			'not_found'          => __( 'No Testb CPT found.', 'copernicus-prime' ),
-			'not_found_in_trash' => __( 'No Testb CPT found in Trash.', 'copernicus-prime' ),
-		),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'show_in_nav_menus' => true,
-		'show_in_rest' => false,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'exclude_from_search' => false,
-		'rewrite' => array( 'slug' => 'testb' ),
-	),
-);
-
-$config['meta_box']['term']['testb'] = array(
-	'active' => true,
-	'taxonomy' => 'testb',
+	'roles' => 'all',
 	'name' => __( 'My First Meta Box', 'copernicus-prime' ),
 	'context' => 'normal', // normal | advanced | side
 	'priority' => 'high', // high | core | default | low

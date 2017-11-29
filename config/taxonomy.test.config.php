@@ -35,7 +35,6 @@ $config['taxonomy']['test'] = array(
 
 $config['meta_box']['term']['test'] = array(
 	'active' => true,
-	'type' => 'term',
 	'taxonomy' => 'test',
 	'name' => __( 'My First Meta Box', 'copernicus-prime' ),
 	'context' => 'normal', // normal | advanced | side
