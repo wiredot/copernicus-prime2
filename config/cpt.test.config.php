@@ -42,9 +42,8 @@ $config['custom_post_type']['test'] = array(
 	'delete_with_user' => true,
 );
 
-$config['meta_box']['test'] = array(
+$config['meta_box']['post']['test'] = array(
 	'active' => true,
-	'type' => 'post',
 	'post_type' => 'test',
 	'name' => __( 'My First Meta Box', 'copernicus-prime' ),
 	'context' => 'normal', // normal | advanced | side
@@ -52,23 +51,38 @@ $config['meta_box']['test'] = array(
 	'fields' => array(
 		'text_field' => array(
 			'type' => 'text',
-			'label' => __( 'Text field', 'copernicus-prime' ),
+			'label' => __( 'Text', 'copernicus-prime' ),
+			'description' => __( 'In a few words, explain what this site is about.', 'copernicus-prime' ),
+			'size' => 'regular', // tiny, small, regular, large
 		),
 		'date_field' => array(
 			'type' => 'date',
-			'label' => __( 'Date field', 'copernicus-prime' ),
+			'label' => __( 'Date', 'copernicus-prime' ),
+			'description' => array(
+				__( 'In a few words, explain what this site is about.', 'copernicus-prime' ),
+				__( 'In a few words, explain what this site is about.', 'copernicus-prime' ),
+			),
 		),
 		'email_field' => array(
 			'type' => 'email',
-			'label' => __( 'Email field', 'copernicus-prime' ),
+			'label' => __( 'Email', 'copernicus-prime' ),
+		),
+		'number_field' => array(
+			'type' => 'number',
+			'label' => __( 'Number', 'copernicus-prime' ),
+			'attributes' => array(
+				'step' => 1,
+				'min' => 1,
+			),
+			'size' => 'small',
 		),
 		'textarea_field' => array(
 			'type' => 'textarea',
-			'label' => __( 'Textarea field', 'copernicus-prime' ),
+			'label' => __( 'Textarea', 'copernicus-prime' ),
 		),
 		'select_field' => array(
 			'type' => 'select',
-			'label' => __( 'Select field', 'copernicus-prime' ),
+			'label' => __( 'Select', 'copernicus-prime' ),
 			'attributes' => array(
 				'multiple' => false,
 			),
