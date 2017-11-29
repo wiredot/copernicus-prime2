@@ -1,8 +1,13 @@
 <?php
 
-$config['css']['styles'] = [
-	'asd' => 'asd',
-	'we' => 'asd',
-	'ased' => 'asd',
-	'asrrd' => 'asd',
-];
+$config['css']['sol-css'] = array(
+	'front' => true,
+	'admin' => false,
+	'media' => 'all',
+	'dependencies' => array(),
+	'version' => null,
+	'files' => array(
+		'style' => 'assets/css/style.css',
+	),
+	'dev_files' => array(),
+);

@@ -158,3 +158,16 @@ $config['meta_box']['post']['test'] = array(
 		),
 	),
 );
+
+$config['admin_custom_columns']['test'] = array(
+	'active' => true,
+	'post_type' => 'tesst',
+	'orderby' => 'date',
+	'order' => 'DESC',
+	'columns' => array(
+		'featured_image',
+		'title',
+		'taxonomy-test',
+		'date',
+	),
+);

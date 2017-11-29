@@ -1,0 +1,8 @@
+{{ get_header() }}
+
+{% loop %}
+	<h1>{{ the_title() }}</h1>
+	{{ the_content() }}
+{% endloop %}
+
+{{ get_footer() }}
