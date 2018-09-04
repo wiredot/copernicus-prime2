@@ -1,0 +1,14 @@
+{
+  "name": "CopernicusPrime",
+  "version": "2.0.0",
+  "description": "Copernicus Prime Libraries",
+  "license": "MIT",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.0",
+    "flexmenu": "352Media/flexMenu",
+    "owl.carousel": "^2.3.4",
+    "svg4everybody": "^2.1.9"
+  }
+}
