@@ -9,6 +9,7 @@
     "bourbon-neat": "^3.0.0",
     "flexmenu": "352Media/flexMenu",
     "owl.carousel": "^2.3.4",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "wd-components": "^1.0.0"
   }
 }
