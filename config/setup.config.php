@@ -17,7 +17,7 @@ $config['theme']['support'] = array(
 	),
 	'custom-logo' => array(
 		'width'       => 250,
-		'height'      => 250,
+		'height'      => 40,
 		'flex-width'  => true,
 	),
 );

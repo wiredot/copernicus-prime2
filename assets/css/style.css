@@ -452,7 +452,8 @@ html {
     border: 1px solid #2185d0; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #dbdbdb; }
 
 footer.main {
   background-color: #fff; }
@@ -469,6 +470,10 @@ footer.main {
     float: left;
     margin-left: 50px;
     display: flex; }
+  .main-header .custom-logo-link {
+    height: 40px;
+    width: auto;
+    margin-top: 10px; }
   .main-header .main-navigation, .main-header .social {
     display: flex;
     justify-content: flex-end;
