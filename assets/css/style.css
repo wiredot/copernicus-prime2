@@ -88,85 +88,85 @@ html {
   .wdc-form input[type=reset].primary,
   .wdc-form input[type=button].primary,
   .wdc-form button.primary {
-    background-color: #930;
+    background-color: #900;
     color: #fff; }
     .wdc-button.primary:hover,
     .wdc-form input[type=submit].primary:hover,
     .wdc-form input[type=reset].primary:hover,
     .wdc-form input[type=button].primary:hover,
     .wdc-form button.primary:hover {
-      background-color: #662200; }
+      background-color: #660000; }
     .wdc-button.primary.outline,
     .wdc-form input[type=submit].primary.outline,
     .wdc-form input[type=reset].primary.outline,
     .wdc-form input[type=button].primary.outline,
     .wdc-form button.primary.outline {
-      box-shadow: 0 0 0 1px #930 inset;
+      box-shadow: 0 0 0 1px #900 inset;
       background-color: transparent;
-      color: #930; }
+      color: #900; }
       .wdc-button.primary.outline:hover,
       .wdc-form input[type=submit].primary.outline:hover,
       .wdc-form input[type=reset].primary.outline:hover,
       .wdc-form input[type=button].primary.outline:hover,
       .wdc-form button.primary.outline:hover {
-        color: #662200;
-        border-color: #662200; }
+        color: #660000;
+        border-color: #660000; }
   .wdc-button.secondary,
   .wdc-form input[type=submit].secondary,
   .wdc-form input[type=reset].secondary,
   .wdc-form input[type=button].secondary,
   .wdc-form button.secondary {
-    background-color: #090;
+    background-color: #980;
     color: #fff; }
     .wdc-button.secondary:hover,
     .wdc-form input[type=submit].secondary:hover,
     .wdc-form input[type=reset].secondary:hover,
     .wdc-form input[type=button].secondary:hover,
     .wdc-form button.secondary:hover {
-      background-color: #006600; }
+      background-color: #665b00; }
     .wdc-button.secondary.outline,
     .wdc-form input[type=submit].secondary.outline,
     .wdc-form input[type=reset].secondary.outline,
     .wdc-form input[type=button].secondary.outline,
     .wdc-form button.secondary.outline {
-      box-shadow: 0 0 0 1px #090 inset;
+      box-shadow: 0 0 0 1px #980 inset;
       background-color: transparent;
-      color: #090; }
+      color: #980; }
       .wdc-button.secondary.outline:hover,
       .wdc-form input[type=submit].secondary.outline:hover,
       .wdc-form input[type=reset].secondary.outline:hover,
       .wdc-form input[type=button].secondary.outline:hover,
       .wdc-form button.secondary.outline:hover {
-        color: #006600;
-        border-color: #006600; }
+        color: #665b00;
+        border-color: #665b00; }
   .wdc-button.tertiary,
   .wdc-form input[type=submit].tertiary,
   .wdc-form input[type=reset].tertiary,
   .wdc-form input[type=button].tertiary,
   .wdc-form button.tertiary {
-    background-color: #049;
+    background-color: #088;
     color: #fff; }
     .wdc-button.tertiary:hover,
     .wdc-form input[type=submit].tertiary:hover,
     .wdc-form input[type=reset].tertiary:hover,
     .wdc-form input[type=button].tertiary:hover,
     .wdc-form button.tertiary:hover {
-      background-color: #002d66; }
+      background-color: #005555; }
     .wdc-button.tertiary.outline,
     .wdc-form input[type=submit].tertiary.outline,
     .wdc-form input[type=reset].tertiary.outline,
     .wdc-form input[type=button].tertiary.outline,
     .wdc-form button.tertiary.outline {
-      box-shadow: 0 0 0 1px #049 inset;
+      box-shadow: 0 0 0 1px #088 inset;
       background-color: transparent;
-      color: #049; }
+      color: #088; }
       .wdc-button.tertiary.outline:hover,
       .wdc-form input[type=submit].tertiary.outline:hover,
       .wdc-form input[type=reset].tertiary.outline:hover,
       .wdc-form input[type=button].tertiary.outline:hover,
       .wdc-form button.tertiary.outline:hover {
-        color: #002d66;
-        border-color: #002d66; }
+        color: #005555;
+        border-color: #005555; }
   .wdc-button.small,
   .wdc-form input[type=submit].small,
   .wdc-form input[type=reset].small,
@@ -442,7 +442,7 @@ html {
       transition: border-color 0.3s; }
   .wdc-radio:checked + span:after,
   .wdc-form input[type=radio]:checked + span:after {
-    background-color: #930;
+    background-color: #900;
     width: 7px;
     height: 7px;
     top: 4px;
@@ -455,8 +455,12 @@ body {
   font-size: 16px;
   background-color: #dbdbdb; }
 
-footer.main {
+.main-footer {
   background-color: #fff; }
+  .main-footer::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 .main-header {
   background-color: #fff;
@@ -482,6 +486,8 @@ footer.main {
     flex: 1 1 auto; }
     .main-header .main-navigation a {
       line-height: 60px; }
+    .main-header .main-navigation ul {
+      display: none; }
   .main-header li {
     margin-left: 10px; }
 

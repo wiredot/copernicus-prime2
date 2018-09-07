@@ -1,15 +1,8 @@
 <header class="main-header">
 	<nav>
 		{{ the_custom_logo() }}
-		<ul class="main-navigation">
-			<li><a href="#">asdas</a></li>
-			<li><a href="#">vxcv</a></li>
-			<li><a href="#">2i-rvmv</a></li>
-		</ul>
-		<ul class="social">
-			<li><a href="#">facebook</a></li>
-			<li><a href="#">twitter</a></li>
-			<li><a href="#">instagram</a></li>
-		</ul>
+		{{ wp_nav_menu( {'theme_location': 'main', 'container': 'ul', 'menu_class': 'main-navigation'} ) }}
+		{{ wp_nav_menu( {'theme_location': 'social', 'container': 'ul', 'menu_class': 'social', 'depth': 1} ) }}
 	</nav>
 </header>
+{{ the_post_thumbnail('featured-image') }}

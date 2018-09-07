@@ -1,3 +1,4 @@
-footer.main {
+.main-footer {
+	@include grid-container;
 	background-color: #fff;
 }
