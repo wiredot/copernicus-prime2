@@ -9,8 +9,6 @@ var gulp = require('gulp'),
 	svgmin = require('gulp-svgmin'),
 	path = require('path'),
 	sass = require('gulp-sass'),
-	browserSync = require('browser-sync'),
-	reload = browserSync.reload,
 	autoprefixer = require('autoprefixer'),
 	postcss = require('gulp-postcss'),
 	rsp = require('remove-svg-properties').stream;
@@ -23,11 +21,10 @@ var options = {
 
 gulp.task('default', ['scss', 'js', 'svg']);
 
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', function() {
 	gulp.watch( options.src + '/js/*.js', ['js']);
 	gulp.watch( options.src + '/scss/**/*.scss', ['scss']);
 	gulp.watch( options.src + '/svg/*.svg', ['svg']);
-	gulp.watch( options.templates + '/templates/*.html' ).on('change', reload);
 });
 
 gulp.task('scss', function() {
@@ -41,8 +38,7 @@ gulp.task('scss', function() {
 		.pipe(notify({
 			message: 'CSS generated',
 			title: 'CampusLive'
-		}))
-		.pipe(browserSync.stream());
+		}));
 });
 
 gulp.task('js', function() {
@@ -73,12 +69,4 @@ gulp.task('svg', function() {
 		}))
 		.pipe(svgstore(''))
 		.pipe(gulp.dest( options.assets + '/svg'));
-});
-
-gulp.task('browser-sync', function(){
-
-	browserSync.init({
-		proxy: 'http://local.copernicusprime.com',
-		notify: false
-	});
 });

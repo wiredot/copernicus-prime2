@@ -1,0 +1,21 @@
+{{ get_header() }}
+
+{% include 'main/header.twig' %}
+
+{% block content %}
+	{% loop %}
+		<h1>{{ the_title() }}</h1>
+		{{ the_content() }}
+	{% endloop %}
+{% endblock %}
+{% block aside %}
+	<ul>
+		<li><a href="#">asdasd</a></li>
+		<li><a href="#">dsdfsdf</a></li>
+		<li><a href="#">svxcvrfr</a></li>
+	</ul>
+{% endblock %}
+
+{% include 'main/footer.twig' %}
+
+{{ get_footer() }}
