@@ -1,6 +1,6 @@
 {{ get_header() }}
 
-{% include 'main/header.twig' %}
+{{ get_template_part('main/header') }}
 
 {% block content %}
 	{% loop %}
@@ -9,6 +9,6 @@
 	{% endloop %}
 {% endblock %}
 
-{% include 'main/footer.twig' %}
+{{ get_template_part('main/footer') }}
 
 {{ get_footer() }}

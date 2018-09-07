@@ -1,6 +1,6 @@
 {{ get_header() }}
 
-{% include 'main/header.twig' %}
+{{ get_template_part('main/header') }}
 
 {% block content %}
 	{% loop %}
@@ -9,13 +9,9 @@
 	{% endloop %}
 {% endblock %}
 {% block aside %}
-	<ul>
-		<li><a href="#">asdasd</a></li>
-		<li><a href="#">dsdfsdf</a></li>
-		<li><a href="#">svxcvrfr</a></li>
-	</ul>
+	{{ get_sidebar() }}
 {% endblock %}
 
-{% include 'main/footer.twig' %}
+{{ get_template_part('main/footer') }}
 
 {{ get_footer() }}
