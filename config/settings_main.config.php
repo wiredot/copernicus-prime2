@@ -1,6 +1,6 @@
 <?php
 
-$config['settings']['page']['cpp'] = array(
+$config['settings']['menu']['cpp'] = array(
 	'active' => true,
 	'submenu' => false,
 	'page_title' => __( 'Copernicus Prime', 'copernicus-prime' ),

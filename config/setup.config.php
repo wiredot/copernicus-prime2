@@ -20,4 +20,5 @@ $config['theme']['support'] = array(
 		'height'      => 40,
 		'flex-width'  => true,
 	),
+	'align-wide',
 );

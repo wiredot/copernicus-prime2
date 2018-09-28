@@ -41,6 +41,27 @@ $config['custom_post_type']['test'] = array(
 	'query_var' => true,
 	'can_export' => true,
 	'delete_with_user' => true,
+	'show_in_rest' => true,
+	'template' => array(
+		array(
+			'core/image',
+			array(
+				'align' => 'wide',
+			),
+		),
+		array(
+			'core/heading',
+			array(
+				'placeholder' => 'Add Author...',
+			),
+		),
+		array(
+			'core/paragraph',
+			array(
+				'placeholder' => 'Add Description...',
+			),
+		),
+	),
 );
 
 $config['meta_box']['post']['test'] = array(
